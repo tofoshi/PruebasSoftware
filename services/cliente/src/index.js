@@ -9,7 +9,7 @@ class App extends Component {
 		super();
 		this.state = {
 			users: [],
-			username:'',
+			username:'justatest',
 			email:'',
 		};
 		this.addUser = this.addUser.bind(this);
@@ -22,8 +22,8 @@ class App extends Component {
 
 	addUser(event){
 		event.preventDefault();
-		const data={
-			username: this.state.username,
+		const data = {
+			username:this.state.username,
 			email:this.state.email
 		};
 
@@ -52,9 +52,9 @@ render() {
 	 <section className="section">
 	 <div className="container">
 	 <div className="columns">
-	 <div className="column is-one-third">
+	 <div className="column is-half">
 	 <br/>
-	 <h1 className="title is-1 is-1">Todos los usuarios</h1>
+	 <h1 className="title is-1">Todos los usuarios</h1>
 	 <hr/><br/>
 	 <AddUser 
 	 username={this.state.username}
