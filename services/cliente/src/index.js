@@ -32,7 +32,7 @@ class App extends Component {
 			this.getUsers();
 			this.setState({username:'',email:''});
 		})
-		.catch((err) => {console.log(err);})
+		.catch((err) => {console.log(err);});
 	};
 
 	handleChange(event){
